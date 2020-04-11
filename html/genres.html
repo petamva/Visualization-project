@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/genres.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway&display=swap" rel="stylesheet">
+    <title>Genres</title>
+</head>
+
+<body>
+    <h1 class = "header" style="font-size: 3em ">The film industry</h1>
+    <h2 class = "header2" style="font-size: 2em " >Genres</h2>
+    <p class = "text">
+        Genre is most popularly known as a category of literature, music,
+        or other forms of art or entertainment, whether written or spoken,
+        audio or visual, based on some set of stylistic criteria, yet genres
+        can be aesthetic, rhetorical, communicative, or functional.
+        Genres form by conventions that change over time as cultures invent
+        new genres and discontinue the use of old ones.Genres refers to recurring,
+        repeating and similar, familiar or instantly-recognizable patterns, styles,
+        themes, syntax, templates, paradigms, motifs, rules or generic conventions
+        (source:<a href="https://en.wikipedia.org/wiki/Film_industry">Wikipedia</a>).
+    </p>
+        <h1 class = "header2">Film Genres</h1>
+        <p class = "text">Film genres are various forms or identifiable types, categories,
+            classifications or groups of films.The basic genres of film can be regarded as
+            drama, in the feature film and most cartoons, and documentary. Most dramatic
+            feature films, especially from Hollywood fall fairly comfortably into one of
+            a long list of film genres such as the Western, war film, horror film, romantic
+            comedy film, musical, crime film, and many others. Many of these genres have
+            a number of subgenres,for example by setting or subject, or a distinctive national
+            style,for example in the Indian Bollywood musical
+            (source:<a href="https://en.wikipedia.org/wiki/Film_industry">Wikipedia</a>).
+        </p>
+    <div class = "force">
+        <div id = "forceContainer"></div>
+        <p class="text">
+            The above force diagram reflects almost 100 years of film making. Every
+            circle represents a genre, its size depicting the frequency of films produced
+            in the last 100 years that belong to that particular genre. Some genres
+            are more strongly connected than others but they altogether form the visual-art form
+            that we know as Film.
+        </p>
+    </div>
+    <hr class = "line">
+    <div class="budgetProfit">
+        <h2 class = "header2" style="font-size: 2em ">Budgets and Profit</h2>
+        <p class="text">
+            When you think of the most profitable movies at the box office,
+            you probably think of the Hollywood blockbusters - films that grab
+            headlines because of their huge budgets and equally huge profits,
+            like "Avatar," "Titanic" and "Pirates of the Caribbean." However,
+            when it comes down to it, these aren't the movies that bring in
+            the most return on investment for their respective film studios.
+            Most of the time, movies with smaller budgets provide studios with
+            the most bang for their buck, if the film reaches a profitable state
+            (source:<a href="https://www.investopedia.com/financial-edge/0410/movie-genres-with-the-best-roi.aspx">Investopedia</a>).
+        </p>
+        <button id="budget-button" class="button">Profit</button>
+        <div id = "budgetProfitContainer"></div>
+        <p class = "text">
+            This barchart shows the average budget per genre from 2010 up to 2017.
+            As one would expect Adventure,Animation and Fantasy are the industry's
+            "big spenders" because of special effects and sets. When it comes to %profit
+            though, Horror films blow the competition away with a whopping 1,100% profit
+            per average. It seems that making a Horror movie is somewhat like investing in Bill
+            Gates when he was still coding in his garage!
+        </p>
+    </div>
+    <hr class = "line">
+    <div class = "2014-2016">
+        <h2 class = "header2" style="font-size: 2em ">Putting it all together</h2>
+        <p class="text">
+            What about yearly releases, budget, profit and ratings altogether?
+            Wouldn't it be nice to have a chart that contains all that information
+            so that we could compare the genres with respect to all of the above categories? We 've collected data
+            from a three-year period and visualized it all in the same scatterplot.
+        </p>
+        <div>
+            <select id="yearButton" class="button">
+                <option selected value=0>All</option>
+                <option value=2014>2014</option>
+                <option value=2015>2015</option>
+                <option value=2016>2016</option>
+            </select>
+
+            <select id="genreButton" class="button">
+                <option selected value="all">All</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Action">Action</option>
+                <option value="Animation">Animation</option>
+                <option value="Family">Family</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Crime">Crime</option>
+                <option value="Drama">Drama</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Horror">Horror</option>
+                <option value="History">History</option>
+                <option value="War">War</option>
+                <option value="Music">Music</option>
+                <option value="Western">Western</option>
+            </select>
+        </div>
+        <div id="allContainer"></div>
+        <p class="text">
+            This scatterplot presents profit against rating. Size of each circle represents
+            budget and color the genre. You have the option to toggle between years and
+            between genres for easier comparison and deducing conclusions.
+        </p>
+    </div>
+    <div class="sources">
+        <h2 class = "sourcesHeader" >Sources - data:</h2>
+        <ul style="text-align: left">
+            <li>https://www.kaggle.com/tmdb/tmdb-movie-metadata</li>
+        </ul>
+    </div>
+
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="force.js"></script>
+    <script src="budgetProfit.js"></script>
+    <script src="scatter.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/distributors.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway&display=swap" rel="stylesheet">
+    <title>Studios</title>
+</head>
+<body>
+        <h1 class = "header" style="font-size: 3em ">The film industry</h1>
+        <h2 class = "header2" style="font-size: 2em " >Distributors - Box office</h2>
+        <p class = "text">
+            The film industry or motion picture industry, comprises the technological and commercial institutions of film-making,
+            i.e., film production companies, film studios, cinematography, animation, film production, screenwriting,
+            pre-production, post production, film festivals, distribution and actors, film directors and other film crew personnel.
+            Though the expense involved in making films almost immediately led film production to concentrate under the
+            auspices of standing production companies, advances in affordable film making equipment, and expansion
+            of opportunities to acquire investment capital from outside the film industry itself, have allowed independent
+            film production to evolve(source:<a href="https://en.wikipedia.org/wiki/Film_industry">Wikipedia</a>).
+        </p>
+        <h1 class = "header2">The "big 6"</h1>
+        <p class = "text">Since the dawn of film-making, the U.S. film studios have dominated both American cinema and the global
+            film industry. U.S. studios have benefited from a strong first-mover advantage in that they were the
+            first to industrialize film-making and master the art of mass-producing and distributing high-quality
+            films with broad cross-cultural appeal. In the last 15 years the Big Six majors – Walt Disney Pictures, Warner Bros.,
+            Universal Pictures, Sony Pictures, 20th Century Fox and Paramount Pictures – have almost completely monopolised the
+            competition making it very rare for a film to reach a broad international audience on multiple continents
+            and in multiple languages without being picked up by one them
+            (source:<a href="https://en.wikipedia.org/wiki/Film_industry">Wikipedia</a>).
+        </p>
+        <div class = "donut">
+            <div class = "donut header">
+                <h2 class = "header" style="margin: 40px auto 0 auto">~80% of total market share (1995-2020)</h2>
+            </div>
+            <div id = "donutContainer"></div>
+                <p class="text">
+                    Big six share almost 80% of the total market in the last 15 years (1995-2020).
+                    Each "piece" of the donut represents a studio. The "donut" is made ring-like on purpose:
+                    one can compare one studio to the other based on arc length rather than size.
+                    The chart is interactive too: hover over each studio with your mouse to find out its total gross over this period!
+                </p>
+        </div>
+        <hr class = "line">
+        <div class="releases">
+            <h2 class = "header2" style="font-size: 2em ">Releases</h2>
+            <p class="text">
+                Today, the Big six majors routinely distribute hundreds of films every year into all
+                significant international markets (that is, where discretionary income is high enough
+                for consumers to afford to watch films). The Big Six major studios
+                are primarily backers and distributors of films whose actual production is largely handled by
+                independent companies – either long-running entities or ones created for and dedicated to the making
+                of a specific film. The specialty divisions often simply acquire distribution rights to pictures in
+                which the studio has had no prior involvement. While the majors still do a modicum of true production,
+                their activities are focused more in the areas of development, financing, marketing, and merchandising
+                (source:<a href="https://en.wikipedia.org/wiki/Film_industry">Wikipedia</a>).
+            </p>
+            <div id = "releasesContainer"></div>
+            <p class = "text">
+                The diagram above describes yearly releases from 1995 to 2020 where the blue line represents Big 6
+                releases combined and the red one all of the rest. It is clear that major studio releases are
+                double as many as the rest. What also can be inferred from the chart is that in general
+                film release numbers are gradually declining from 2006 and after.
+            </p>
+        </div>
+        <hr class = "line">
+        <div class = "boxOffice">
+            <h2 class = "header2" style="font-size: 2em ">Box Office</h2>
+            <p class="text">
+                Box office business can be measured in the terms of the number of tickets sold or the amount
+                of money raised by ticket sales (revenue). The projection and analysis of these earnings is
+                very important for the creative industries and often a source of interest for fans. This is
+                predominant in the Hollywood Film industry
+                (source:<a href="https://en.wikipedia.org/wiki/Film_industry">Wikipedia</a>).
+            </p>
+            <div id="boxOfficeContainer"></div>
+            <p class="text">
+                The line chart above presents a time series of annual US box office for the past 15 years along
+                with ticket sales since the one is strongly tied to the other. Since 2002 ticket sales have been
+                decreasing in contrast to the box office, meaning that audience sizes have been shrinking as years
+                go by but ticket prices have been rising. Hover over each legend for a discrete view of each quantity.
+            </p>
+        </div>
+        <div class="sources">
+            <h2 class = "sourcesHeader" >Sources - data:</h2>
+            <ul style="text-align: left">
+                <li>https://www.the-numbers.com/</li>
+                <li>https://www.boxofficemojo.com/</li>
+            </ul>
+        </div>
+
+
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <script src="revisedDonut.js"></script>
+        <script src="studios.js"></script>
+        <script src="boxOffice.js"></script>
+</body>
+</html>

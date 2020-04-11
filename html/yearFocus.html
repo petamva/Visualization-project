@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/yearFocus.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway&display=swap" rel="stylesheet">
+    <title>Focusing on seasons</title>
+</head>
+    <body>
+        <h1 class = "header" style="font-size: 3em ">The film industry</h1>
+        <h2 class = "header2" style="font-size: 2em ">Focusing on seasons</h2>
+        <p class = "text">
+            In this part our analysis narrows down and focuses deeper into
+            specific seasons. First we investigate reviews across the board
+            (IMDB,Rotten tomatoes,Metascore) of 2016-2017 releases. Are there
+            any hidden trends? do film critics and audiences agree on which was
+            the best film? Moving on we turn into 2014 and present all releases
+            from a different view, extracting information and deriving statistics
+            with an 'out-of-the-box' approach.
+        </p>
+        <h1 class = "header2">2016-2017 reviews</h1>
+        <p class = "text">
+            Few things bring cinephiles joy quite like spending the weekend holed
+            up in a movie theater, devouring the latest silver screen debuts.
+            Though the biggest question is always, How exactly does one choose
+            what to see? Well, that's where the next chart comes in. Obviously,
+            there will be certain movies throughout the year that feel like
+            must-sees just because everyone is talking about them. However,
+            if you want to be a more discerning moviegoer, you can take a look at
+            this diagram. Here we give you the lowdown on 2016-2017 releases —
+            and the critics' verdicts on them. Then, you'll be able to determine
+            which one is right for you
+            (source:<a href="https://www.refinery29.com/en-us/2016/01/100705/new-movie-reviews-2016">Refinery29</a>).
+        </p>
+        <div class = "rating">
+            <div class = "rating header">
+                <h2 class = "header" style="margin: 40px auto 0 auto">2016-2017 movie ratings</h2>
+            </div>
+            <button id="meta-button" class="button">Audiences</button>
+            <div id = "ratingContainer">
+                <div id="tooltip" class="hidden">
+                    <p><strong>Film title:</strong></p>
+                    <p><span id="value">100</span></p>
+                </div>
+            </div>
+            <p class="text">
+                It seems that rotten tomatoes' critics, IMDB and metascore ratings
+                go hand by hand. The vast majority of films receive similar critics
+                across the board. When audiences' reviews come into play however things change:
+                people tend to be more generous especially with low-rated films.Things
+                also seem to change at the top!
+            </p>
+        </div>
+        <hr class = "line">
+        <div class="sunburst">
+            <h2 class = "header2" style="font-size: 2em ">2014 releases</h2>
+            <p class="text">
+                The next section is actually more about comparing visualizations
+                rather than extracting information from them. We have collected
+                most of 2014 film and tv-show releases and we present
+                them below in two different ways. A sunburst plot and a tree. Both
+                diagrams are typically used for visualizing hierarchies and networks
+                with connections between nodes and leaves. Here we implement them
+                in a similar way grouping releases in genres, theatrical films and tv-shows.
+                Which one you choose is a matter of personal preference: the sunburst plot
+                is an impressive visualization full with beautiful colors and packed
+                with information. The tree on the other hand is almost an exact opposite:
+                it starts out as a simple small node and as it unfolds only relevant information
+                is displayed making it a minimalistic alter ego of the sunburst diagram.
+            </p>
+            <div id = "sunburstContainer"></div>
+            <p class = "text">
+                This interactive data graphic is undoubtedly amazing. But it can also distort
+                information in its attempt to persuade. It is actually quite easy to get overwhelmed
+                by all those flashy colors and the barrage of information. As consumers of data
+                graphics, it behooves us all to arm ourselves with a more thorough language
+                and understanding of data graphics.
+            </p>
+        </div>
+        <hr class = "line">
+        <div class = "tree">
+            </p>
+            <div id="treeContainer"></div>
+            <p class="text">
+                It is clear that the tree diagram is following after Edward Tufte's principles:
+                “Graphical excellence consists of complex ideas communicated with clarity,
+                precision, and efficiency”(page.51). After all less is more...
+            </p>
+        </div>
+        <div class="sources">
+            <h2 class = "sourcesHeader" >Sources - data:</h2>
+            <ul style="text-align: left">
+                <li><a href="https://www.freecodecamp.org/news/whose-reviews-should-you-trust-imdb-rotten-tomatoes-metacritic-or-fandango-7d1010c6cf19/">freecodecamp.org</a></li>
+                <li>movie_ratings_16_17.csv</li>
+                <li>Edward R. Tufte - "The Visual Display of Quantitative Information"</li>
+                <li><a href="https://www.kaggle.com/orgesleka/imdbmovies">kaggle.com</a></li>
+                <li>imdb.csv</li>
+            </ul>
+        </div>
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <script src="ratingsTest.js"></script>
+        <script src="sunburst8.js"></script>
+        <script src="tree.js"></script>
+    </body>
+</html>

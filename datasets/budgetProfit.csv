@@ -1,0 +1,20 @@
+genre,budget,profit
+Action,78,144
+Adventure,102,201
+Animation,90,165
+Comedy,32,210
+Crime,34,121
+Documentary,2,18
+Drama,25,167
+Family,87,208
+Fantasy,108,144
+History,28,360
+Horror,14,1105
+Music,20,289
+Mystery,43,114
+Romance,27,218
+Science Fiction,67,193
+TV Movie,1,-100
+Thriller,28,439
+War,45,311
+Western,16,-25
